@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,10 +44,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joA-q4-99v">
+                                <rect key="frame" x="0.0" y="734" width="414" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="joA-q4-99v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1kv-3z-cYl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="joA-q4-99v" secondAttribute="bottom" id="61n-mr-4ZV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="joA-q4-99v" secondAttribute="trailing" id="DjM-0y-c9z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="36C-ST-0PO" secondAttribute="trailing" id="QpN-z7-XWe"/>
+                            <constraint firstItem="joA-q4-99v" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.142857" id="Y8X-Mm-WPf"/>
                             <constraint firstItem="36C-ST-0PO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.125" id="YpR-jo-cKL"/>
                             <constraint firstItem="36C-ST-0PO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r4J-0D-NEL"/>
                             <constraint firstItem="36C-ST-0PO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v7c-vY-D0y"/>
@@ -54,6 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cameView" destination="joA-q4-99v" id="O2j-qO-h0D"/>
                         <outlet property="connectButton" destination="UTq-Tt-GCW" id="CRV-nF-Mgy"/>
                         <outlet property="messageLabel" destination="36C-ST-0PO" id="RNb-sP-sBo"/>
                         <outlet property="recordButton" destination="Iaw-R9-jkk" id="24x-fN-wcc"/>
