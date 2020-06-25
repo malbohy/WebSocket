@@ -1,16 +1,28 @@
 PODS:
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
   - SwiftWebSocket (2.7.0)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - Socket.IO-Client-Swift (~> 15.2)
   - SwiftWebSocket
+  - SwiftyJSON (~> 5.0)
 
 SPEC REPOS:
   trunk:
+    - Socket.IO-Client-Swift
+    - Starscream
     - SwiftWebSocket
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftWebSocket: 612c9729fd503cb6b0b8b45390c788686dac306f
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 250d74542dc6530d8e784f00605d145bfbaf324e
+PODFILE CHECKSUM: 21210e48daf038faab57a581a822b468f699b8ea
 
 COCOAPODS: 1.9.0

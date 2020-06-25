@@ -5,9 +5,9 @@ import WebRTC
 import CoreTelephony
 //import ReachabilitySwift
 
-let TAG = "ViewController"
-let AUDIO_TRACK_ID = TAG + "AUDIO"
-let LOCAL_MEDIA_STREAM_ID = TAG + "STREAM"
+fileprivate let TAG = "ViewController"
+fileprivate let AUDIO_TRACK_ID = TAG + "AUDIO"
+fileprivate let LOCAL_MEDIA_STREAM_ID = TAG + "STREAM"
 
 class ViewController2222: UIViewController, RTCPeerConnectionDelegate, RTCDataChannelDelegate {
 

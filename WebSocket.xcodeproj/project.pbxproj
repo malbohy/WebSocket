@@ -17,6 +17,7 @@
 		AD005F2A24A15B2300678624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD005F2824A15B2300678624 /* LaunchScreen.storyboard */; };
 		AD005F3224A17DAC00678624 /* WebSocketResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD005F3124A17DAC00678624 /* WebSocketResponseModel.swift */; };
 		AD005F3424A18B0100678624 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD005F3324A18B0100678624 /* music.mp3 */; };
+		C85C1BA924A46C1F00806D40 /* StreamStartingResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85C1BA824A46C1F00806D40 /* StreamStartingResponseModel.swift */; };
 		C8C2C11D24A31E4600925823 /* ICEServersResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C2C11C24A31E4600925823 /* ICEServersResponseModel.swift */; };
 		C8C2C14224A330A300925823 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C2C14024A3309300925823 /* WebRTC.framework */; };
 		C8C2C14324A330A300925823 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8C2C14024A3309300925823 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -55,6 +56,7 @@
 		AD005F3124A17DAC00678624 /* WebSocketResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketResponseModel.swift; sourceTree = "<group>"; };
 		AD005F3324A18B0100678624 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		BCE8E7EF5EE034EE69A7F778 /* Pods_WebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85C1BA824A46C1F00806D40 /* StreamStartingResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamStartingResponseModel.swift; sourceTree = "<group>"; };
 		C8C2C11C24A31E4600925823 /* ICEServersResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICEServersResponseModel.swift; sourceTree = "<group>"; };
 		C8C2C12C24A327ED00925823 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C2C12E24A327F800925823 /* Pods_WebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				AD005F2824A15B2300678624 /* LaunchScreen.storyboard */,
 				AD005F2B24A15B2300678624 /* Info.plist */,
 				C8C2C11C24A31E4600925823 /* ICEServersResponseModel.swift */,
+				C85C1BA824A46C1F00806D40 /* StreamStartingResponseModel.swift */,
 			);
 			path = WebSocket;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				AD005F1E24A15B2100678624 /* AppDelegate.swift in Sources */,
 				C8C2C14C24A3316D00925823 /* WebRTCClient.swift in Sources */,
 				C8C2C14F24A33B0900925823 /* template.swift in Sources */,
+				C85C1BA924A46C1F00806D40 /* StreamStartingResponseModel.swift in Sources */,
 				C8C2C11D24A31E4600925823 /* ICEServersResponseModel.swift in Sources */,
 				AD005F3224A17DAC00678624 /* WebSocketResponseModel.swift in Sources */,
 				AD005F2024A15B2100678624 /* SceneDelegate.swift in Sources */,
@@ -420,12 +424,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9QM9VS5L63;
+				DEVELOPMENT_TEAM = BF84SJ63CM;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebSocket",
 				);
 				INFOPLIST_FILE = WebSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,12 +449,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9QM9VS5L63;
+				DEVELOPMENT_TEAM = BF84SJ63CM;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebSocket",
 				);
 				INFOPLIST_FILE = WebSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

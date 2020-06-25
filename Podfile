@@ -10,4 +10,8 @@ target 'WebSocket' do
 #  pod 'libjingle_peerconnection'
 #  pod 'SocketRocket'
 
+pod 'Socket.IO-Client-Swift', '~> 15.2'
+
+pod 'SwiftyJSON', '~> 5.0'
+
 end
